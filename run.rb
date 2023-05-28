@@ -16,6 +16,8 @@ article2 = Article.new(author2, magazine1, "Article 2")
 article3 = Article.new(author1, magazine2, "Article 3")
 
 # Test the methods
+
+# Author methods
 puts "Author: #{author1.name}"
 puts "Author's articles: #{author1.articles.map(&:title)}"
 puts "Author's magazines: #{author1.magazines.map(&:name)}"
@@ -24,12 +26,14 @@ puts "Author's articles after adding a new article: #{author1.articles.map(&:tit
 puts "Author's topic areas: #{author1.topic_areas}"
 puts ""
 
+# Magazine methods
 puts "Magazine: #{magazine1.name}"
 puts "Magazine's contributors: #{magazine1.contributors.map(&:name)}"
 puts "Magazine's article titles: #{magazine1.article_titles}"
 puts "Magazine's contributing authors: #{magazine1.contributing_authors.map(&:name)}"
 puts ""
 
+# Article methods
 puts "Article: #{article1.title}"
 puts "Article's author: #{article1.author.name}"
 puts "Article's magazine: #{article1.magazine.name}"
